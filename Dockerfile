@@ -1,6 +1,5 @@
 FROM python:3.7-alpine
-MAINTAINER Rustam Garayev
-
+LABEL Elena Stirbu
 
 ENV PYTHONUNBUFFERED 1
 
