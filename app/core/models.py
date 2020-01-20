@@ -10,8 +10,8 @@ class UserManager(BaseUserManager):
         if not email:
             raise ValueError("Users must have an email address!")
 
-        if len(password) < 9:
-            raise ValueError("Invalid Password. Min character count is 9!")
+        # if len(password) < 9:
+        #    raise ValueError("Invalid Password. Min character count is 9!")
         user = self.model(email=self.normalize_email(email), **extra_fields)
         user.set_password(password)
         user.save(using=self._db)
