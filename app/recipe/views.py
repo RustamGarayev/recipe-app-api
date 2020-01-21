@@ -61,8 +61,8 @@ class RecipeViewSet(viewsets.ModelViewSet):
         serializer.save(user=self.request.user)
 
 
-class RecipeListAPIView(generics.ListAPIView):
-    """Listing all recipes"""
-
-    queryset = Recipe.objects.all()
-    serializer_class = serializers.RecipeSerializer
+# class RecipeListAPIView(generics.ListAPIView):
+#    """Listing all recipes"""
+#
+#    queryset = Recipe.objects.all()
+#    serializer_class = serializers.RecipeSerializer
